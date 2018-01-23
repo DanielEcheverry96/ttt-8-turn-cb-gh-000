@@ -35,6 +35,6 @@ def input_to_index(cadena) #Convierte la posicion del movimiento que el jugador 
   index -= 1
 end
 
-def turn
-
+def turn(board)
+  puts "Please enter 1-9:"
 end
