@@ -7,8 +7,6 @@ def valid_move?(board, index)
   end
 end
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-
 def position_taken?(board, index)
   isHere = false
   if board[index] == " " || board[index] == ""
@@ -30,11 +28,13 @@ end
 
 # code your input_to_index and move method here!
 
+def move(board, index, caracter = "X")
+  board[index] = caracter
+end
+
 def input_to_index(cadena)
   index = cadena.to_i
   index -= 1
 end
 
-def move(board, index, caracter = "X")
-  board[index] = caracter
-end
+
