@@ -1,4 +1,4 @@
-def valid_move?(board, index)
+def valid_move?(board, index) #Verificar si el movimiento que se desea hacer, es valido 
   isValid = false
   if !position_taken?(board, index) && index.between?(0,8)
     !isValid
@@ -35,4 +35,8 @@ end
 def input_to_index(cadena)
   index = cadena.to_i
   index -= 1
+end
+
+def method_name
+  
 end
