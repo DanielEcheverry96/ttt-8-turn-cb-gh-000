@@ -26,13 +26,11 @@ def display_board(board) #Imprime el estado actual del juego
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
-
-def move(board, index, caracter = "X")
+def move(board, index, caracter = "X") #Realiza el movimiento en el tablero
   board[index] = caracter
 end
 
-def input_to_index(cadena)
+def input_to_index(cadena) #Convierte la posicion del movimiento que el jugador realiza, a una posicion valida para el tablero
   index = cadena.to_i
   index -= 1
 end
